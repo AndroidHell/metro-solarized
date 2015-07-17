@@ -4,6 +4,8 @@ This is a modified version of the Metro Steam skin found here: http://boneyardbr
 
 I don't take credit for the original work and only really changed the gray to match better with the Numix Solarized GTK theme for Linux. 
 
+Screenshot can be found on imgrur: http://i.imgur.com/hZGpqs3.png
+
 Feel free to use this, modify it, hack it up, whatever.
 
 One thing to note: The fonts don't look the best on a 1366 x 768 monitor.
