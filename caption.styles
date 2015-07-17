@@ -1,0 +1,376 @@
+"caption.styles"
+{
+	styles
+	{
+		"CMusicPlayerPanel FrameCloseButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"CMusicPlayerPanel FrameCloseButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+			
+		"CMusicPlayerPanel FrameCloseButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+		
+		"CMusicPlayerPanel FrameMinimizeButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		"CMusicPlayerPanel FrameMinimizeButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+			
+		"CMusicPlayerPanel FrameMinimizeButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		"DirectorySelectDialog FrameCloseButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"DirectorySelectDialog FrameCloseButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+			
+		"DirectorySelectDialog FrameCloseButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+		
+		"CLaunchOptionsDialog FrameCloseButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"CLaunchOptionsDialog FrameCloseButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+			
+		"CLaunchOptionsDialog FrameCloseButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+		"CLaunchOptionsDialog FrameMinimizeButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		"CLaunchOptionsDialog FrameMinimizeButton:hover"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, white10 )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+			
+		"CLaunchOptionsDialog FrameMinimizeButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+		
+		"CClanEventDialog FrameCloseButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"CClanEventDialog FrameCloseButton:hover"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, white10 )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+			
+		"CClanEventDialog FrameCloseButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+		"CClanEventDialog FrameMinimizeButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		"CClanEventDialog FrameMinimizeButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+			
+		"CClanEventDialog FrameMinimizeButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+		
+		"CRegisterCDKeyWizard FrameCloseButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"CRegisterCDKeyWizard FrameCloseButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+			
+		"CRegisterCDKeyWizard FrameCloseButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+		"CRegisterCDKeyWizard FrameMinimizeButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		"CRegisterCDKeyWizard FrameMinimizeButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+			
+		"CRegisterCDKeyWizard FrameMinimizeButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+		
+		"CInstallAppWizard FrameCloseButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"CInstallAppWizard FrameCloseButton:hover"
+		{
+			render_bg {
+			0="fill( x0, y0, x1, y1, white10 )"
+			1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+			
+		"CInstallAppWizard FrameCloseButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_close )"
+			}
+		}
+		"CInstallAppWizard FrameMinimizeButton"
+		{
+			render_bg {
+				0="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		"CInstallAppWizard FrameMinimizeButton:hover"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, white10 )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+			
+		"CInstallAppWizard FrameMinimizeButton:active"
+		{
+			render_bg {
+				0="fill( x0, y0, x1, y1, focus )"
+				1="image( x0-7, y0-4, x1, y1, graphics/win32_win_min )"
+			}
+		}
+
+		//Default Style
+
+    FrameMinimizeButton
+    {
+      render_bg {
+        1="image( x0, y0, x1, y1, graphics/win32_win_min_inactive )"
+      }
+    }
+		
+    FrameMinimizeButton:framefocus
+    {
+      render_bg {
+        1="image( x0, y0, x1, y1, graphics/win32_win_min )"
+      }
+    }
+    
+    FrameMinimizeButton:hover
+    {  
+      render_bg {
+        0="fill( x0, y0+1, x1, y1, white12 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_min )"
+      }
+    }
+    
+    FrameMinimizeButton:active
+    {  
+      render_bg {
+        0="fill( x0, y0+1, x1, y1, white24 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_min )"
+      }
+    }
+
+    FrameMaximizeButton
+    {
+      render_bg {
+        1="image( x0, y0, x1, y1, graphics/win32_win_max_inactive )"
+      }
+    }
+		
+    FrameMaximizeButton:framefocus
+    {
+      render_bg {
+        1="image( x0, y0, x1, y1, graphics/win32_win_max )"
+      }
+    }
+
+		FrameMaximizeButton:hover
+    {
+      render_bg {
+        0="fill( x0, y0, x1, y1, white12 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_max )"
+      }
+    }
+
+		FrameMaximizeButton:active
+    {
+      render_bg {
+        0="fill( x0, y0+1, x1, y1, white24 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_max )"
+      }
+    }
+
+    FrameRestoreButton
+    {
+      render_bg {
+        1="image( x0, y0, x1, y1, graphics/win32_win_restore_inactive )"
+      }
+    }
+		
+    FrameRestoreButton:framefocus
+    {
+      render_bg {
+        1="image( x0, y0, x1, y1, graphics/win32_win_restore )"
+      }
+    }
+
+		FrameRestoreButton:hover
+    {
+      render_bg {
+        0="fill( x0, y0+1, x1, y1, white12 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_restore )"
+      }
+    }
+
+		FrameRestoreButton:active
+    {
+      render_bg {
+        0="fill( x0, y0+1, x1, y1, white24 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_restore )"
+      }
+    }
+
+		FrameCloseButton
+    {
+    render_bg {
+      0="image( x0, y0, x1, y1, graphics/win32_win_close_inactive )"
+    }
+    }
+		
+		FrameCloseButton:framefocus
+    {
+    render_bg {
+      0="image( x0, y0, x1, y1, graphics/win32_win_close )"
+    }
+    }
+
+		FrameCloseButton:hover
+    {
+      render_bg {
+        0="fill( x0, y0+1, x1-1, y1, white12 )"
+        1="image( x0, y0, x1, y1, graphics/win32_win_close )"
+      }
+    }
+    
+		FrameCloseButton:active
+    {
+			render_bg {
+				0="fill( x0, y0+1, x1-1, y1, white24 )"
+				1="image( x0, y0, x1, y1, graphics/win32_win_close )"
+			}
+    }
+	}
+}

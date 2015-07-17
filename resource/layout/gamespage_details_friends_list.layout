@@ -1,0 +1,59 @@
+"resource/layout/gamespage_details_friends_list.layout"
+{
+	controls
+	{
+		infolabelplural	{ controlname="Label" style="infolabel" }
+		infolabelsingular { controlname="Label" style="infolabel" }
+		friendlabelmore { controlname="Label" style="friendlabelmore" labeltext="#Steam_MoreFriends" textAlignment="center" tooltiptext="#Steam_ViewAllFriends" }
+	}
+
+	colors
+	{
+		// Note the margin/spacing/width values here must match what is used in placement below 
+		// for the image region.  The margin value should be computed by adding the margin of all containing
+		// regions for the images.  All these values also must be positive integers.
+		GameDetailsFriends.ImageAreaMargin "14"
+		GameDetailsFriends.ImageAreaSpacing "16"
+		GameDetailsFriends.ImageWidth "34"
+		GameDetailsFriends.ImageHeight "34"
+		
+		Tooltip.Anchor=Parent
+	}
+
+	styles
+	{
+    friendlabelmore
+    {
+			bgcolor=none
+			font-family=basefont
+			font-weight=300
+			font-size=16
+			textcolor="White75"
+			padding-bottom=1
+    }
+  
+		friendlabelmore:hover
+    {   
+			textcolor=white
+    }
+		
+		infolabel
+		{
+			font-size=16
+			textcolor="White75"
+		}	
+	}
+
+	layout
+	{
+		region { name=body width=max height=max }
+		region { name=images region=body width=max height=max }
+
+		//Avatars
+		place { region=images control=*friendimage,friendlabelmore y=22 dir=right width=40 height=40 spacing=2 }
+
+		//Labels - Only one at a time		
+		place { region=body control=infolabelplural y=0 width=max }
+		place { region=body control=infolabelsingular width=max }
+	}
+}

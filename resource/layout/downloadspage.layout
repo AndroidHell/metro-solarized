@@ -1,0 +1,78 @@
+"resource/layout/downloadspage.layout"
+{
+	controls
+	{
+		// the container
+		"DownloadsPage"
+		{
+			"ControlName"		"CDownloadsPage"
+			Style=DownloadsPageStyle
+		}
+		
+		"downloadsummarypanel"
+		{
+			"ControlName"	"DownloadSummaryPanel"
+		}
+	
+		"panel_list"
+		{
+			"ControlName"	"SectionedListPanel"
+			Style=ListPanelStyle
+		}
+				
+	}
+
+	styles
+	{
+		SectionHeaderStyle
+		{     
+			//textcolor=focus
+			//font-style=uppercase
+			font-size=16
+			render_bg
+			{
+				//0="fill(x0,y1,x1,y1+1,White12)"
+			}    
+		}
+    
+    SectionedListPanelCollapser
+    {
+			font-size=16
+      image="graphics/icon_collapse_wide" 
+    }
+		
+    SectionedListPanelCollapser:hover
+		{
+      image="graphics/icon_collapse_wide_over" 	
+		}
+    
+    SectionedListPanelCollapser:selected
+    {
+      image="graphics/icon_expand_wide" 
+    }
+		
+    SectionedListPanelCollapser:selected:hover
+    {
+      image="graphics/icon_expand_wide_over" 
+    }
+
+
+		DownloadsPageStyle
+		{
+			bgcolor=none
+			render
+			{}			
+		}
+		ListPanelStyle
+		{
+			bgcolor=none
+		}	
+	}
+
+	layout
+	{
+		region { name=main x=0 y=0 margin=0 }
+		place { control="downloadsummarypanel,panel_list" dir=down region=main width=max height=max spacing=0 }
+
+	}
+}

@@ -1,0 +1,84 @@
+"resource/layout/overlay_friendsdetails.layout"
+{
+	controls
+	{
+		FriendsDetailPanel 
+		{ 
+			controlname="COverlay_Details_Friends" 
+			style=detailsbox
+		}
+		
+		AllFriendsButton
+		{
+			controlname=button
+			labeltext="#Overlay_Friends_ViewAll"
+		}
+		
+		ViewPlayersButton
+		{
+			controlname=button
+			labeltext="#Overlay_Friends_ViewPlayers"
+		}
+		
+		TitleText { controlname="label" labeltext="#Overlay_Taskbar_Friends" style=detailsboxtitle }
+		
+		TextThisManyFriends { controlname=label style=Focus labeltext="#Overlay_Friends_ThisManyOnline" }
+		
+		grid
+		{
+			alignment=justify		
+			interiorspacing=2
+			style=FriendsGrid
+		}
+	}
+	
+	colors
+	{
+	}
+	
+	styles
+	{
+		detailsboxtitle
+		{
+			bgcolor=none
+			image=graphics/metro/overlay/icons/friends
+		}
+		Button
+		{
+      font-family=light
+			font-weight=300
+      font-size="32"
+      textcolor="White75"
+      font-style=Regular
+			bgcolor=none
+			inset-left=-6
+			inset-top=-4
+			padding-left=25
+			render
+			{
+				0="image(x0,y0+9,x1,y1,graphics/metro/overlay/icons/globe)"
+			}
+		}
+		Button:hover
+		{
+			textcolor=White
+		}
+		Button:active
+		{
+			textcolor=White75
+		}
+	}
+	
+	layout
+	{
+		//Left
+		place { controls=TitleText y=16 width=40 height=40 }
+
+		//Right
+		place { control="AllFriendsButton,ViewPlayersButton" x=56 y=7 }
+		place { control="TextThisManyFriends" x=56 y=40 }
+		
+		//Hidden
+		place { control=grid height=0 }
+	}
+}

@@ -1,0 +1,43 @@
+"settings.styles" 
+{
+	colors
+  {
+		basefont="Helvetica Neue" [$OSX]
+		semibold="Helvetica Neue" [$OSX]
+		semilight="Helvetica Neue" [$OSX]
+		light="Helvetica Neue" [$OSX]
+
+    none="0 0 0 0"
+		Focus_T="0 114 198 30.6" 
+    white03="255 255 255 7.65"
+    white08="255 255 255 20.4"
+    white10="255 255 255 25.5"
+    white12="255 255 255 30.6"
+    //white15="255 255 255 38.25"
+    white24="255 255 255 61.2"
+    white25="255 255 255 63.75"
+    white45="255 255 255 114.75"
+    white75="255 255 255 191.25"
+    white="255 255 255 255"
+    black10="0 0 0 25.5"
+    black12="0 0 0 30.6"
+    //black15="0 0 0 38.25"
+    black24="0 0 0 61.2"
+    black25="0 0 0 63.75"
+    black45="0 0 0 114.75"
+    black75="0 0 0 191.25"
+    Black="0 0 0 255"
+    FrameBorder="24 24 24 255"
+		DetailsBackground=Black45
+		TextEntry="89 89 89 255"
+		ScrollBar="86 86 86 255"
+		ScrollBarH="110 110 110 255"
+    Grey1="40 40 40 255"
+    Grey2="48 48 48 255"
+    Grey3="75 75 75 255"
+    Header_Dark="28 28 28 255"
+    ClientBG="43 43 43 255"
+		ClientBGTransparent="43 43 43 191.25"
+		Red="255 0 0 255"
+	}
+}

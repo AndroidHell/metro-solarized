@@ -1,0 +1,297 @@
+"resource/layout/appdownloadpanel.layout"
+{
+	controls
+	{
+		// this just sets the height
+		appdownloadpanel	{	tall="110"	style=panelStyle }
+
+		// image
+		gameimage		{ controlname="ImagePanel"	 style="gameImagePanel" }		// set the initial size on on the gameimage; it's loaded async, so it may not know the image size immediately
+		
+		// left-mid column
+		namelabel	{ controlname="Label"	labelText="%name%" style="ModuleHeading" }
+		dashlabel	{ controlname="Label"	labelText=""	}
+		launchbutton		{ controlname="Button"	style="DetailsLaunchButton"	labelText="#Steam_LaunchGame" zpos="1" }
+		downloadprogressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="ShowWhileDownloading" style="SlimProgressBar" }
+		settingslink		{ controlname="URLlabel"	style="settingslink" }
+
+		// right-mid column
+		downloadtotallabel	{ controlname="Label"	labelText="#steam_downloads_gamesize_update" style="label2" group="HideOnCompletion" }
+		downloadtotalfield	{ controlname="Label"	labelText="%download_totals%" style="label" style="label" group="HideOnCompletion" }
+		starttimelabel	{ controlname="Label"	labelText="#steam_downloads_initiated" style=Label2  group="ShowWhileDownloading"}
+		starttimefield	{ controlname="Label"	labelText="%time_started%" style=Label  group="ShowWhileDownloading"}
+		timeremaininglabel	{ controlname="Label"	labelText="#steam_downloads_timeremaining" style="label2" group="ShowWhileDownloading" }
+		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="ShowWhileDownloading" }
+		timecompletedlabel	{ controlname="Label"	labelText="#steam_downloads_timecompleted" style="label2" group="ShowWhenComplete" }
+		timecompletedfield	{ controlname="Label"	labelText="%time_completed%"  style="label" group="ShowWhenComplete" }
+
+		// right column
+		updatetypelabel	{ controlname="Label"	labelText="#steam_downloads_suspended" style=ModuleHeading2 }
+		removefromqueuebutton	{ controlname="Button" style="SmRemoveButton" tooltiptext="#steam_downloads_remove" }
+		topofqueuebutton	{ controlname="Button" style="topOfQueueButton" tooltiptext="#steam_downloads_topofqueue" group="HideOnCompletion" }
+		newslink			{ controlname="URLlabel"	style="links"		labelText="#steam_downloads_updatenews" }
+
+	
+		
+	}
+	
+	colors
+	{
+		dark_blue_grad = "12 27 38 255"
+		light_blue_grad = "32 72 102 255"
+	}
+	
+	styles
+	{
+		panelStyle
+		{
+			bgcolor=white10
+			render_bg
+			{
+				0="fill(x0,y0,x1,y0+1,white12)"
+			}
+		}
+		
+		panelStyleHighlight
+		{
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,Focus)"
+				1="fill(x0,y0,x1,y1,ClientBGTransparent)"
+			}			
+		}
+
+		links
+		{
+      font-size="16"
+      textcolor="White75"
+      font-style=Regular
+			padding-left=33 
+			padding-right=8
+			render
+			{
+				0="image(x0+8,y0+12,x1,y1,graphics/metro/icons/globe)"
+				1="fill(x1-1,y0+8,x1,y1-8,white12)"
+			}
+		}
+		
+		links:hover
+		{
+			textcolor=white
+		}
+		
+		settingslink
+		{
+      font-size="16"
+      textcolor="White75"
+      font-style=Regular
+			padding-left=33 
+			padding-right=8
+			render
+			{
+				0="image(x0+8,y0+12,x1,y1,graphics/metro/icons/globe)"
+				//1="fill(x1-1,y0+8,x1,y1-8,white12)"
+			}
+		}
+		
+		settingslink:hover
+		{
+			textcolor=white
+		}
+		
+		URLLabel
+		{
+      font-size="16"
+      textcolor="White75"
+      font-style=Regular
+			padding-left=33 
+			padding-right=0
+			render
+			{
+				0="image(x0+8,y0+12,x1,y1,graphics/metro/icons/downloads/cog_16)"
+				//1="fill(x1-1,y0+8,x1,y1-8,white12)"
+			}
+		}
+		
+		URLLabel:hover
+		{
+			textcolor=white
+		}
+
+		label
+		{
+			font-family=semibold
+			font-size=14
+		}
+
+		label2
+		{
+			textcolor=white
+			font-family=semibold
+			font-size=14
+			font-style=uppercase
+		}
+
+		ModuleHeading
+		{
+			font-family=semilight
+			font-size=24
+			textcolor=white
+		}	
+		
+		ModuleHeading2
+		{
+			font-family=semilight
+			font-size=24
+			textcolor=white
+		}								
+		
+		panelBgColorActive
+		{
+			bgcolor=ClientBG
+		}
+		
+		gameImagePanel
+		{   
+			inset="0 0 0 0"
+			render_bg {}
+			render {}
+		}
+		
+		gameImagePanelHighlight
+		{   
+			inset="0 0 0 0"
+			render_bg {}
+			render {}
+		}		
+						
+		DetailsLaunchButton
+		{	  
+			font-size=0
+			textcolor=none
+			bgcolor=none
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/play )"
+			}
+		}
+	
+		DetailsLaunchButton:hover
+		{	  
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/play_h )"
+			}
+		}
+		
+		DetailsLaunchButton:active
+		{	  
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/play_p )"
+			}
+		}	
+
+		topOfQueueButton
+		{   
+			font-size=0
+			textcolor=none
+			bgcolor=none
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/metro/icons/downloads/topofqueue )"
+			}
+		}
+		
+		topOfQueueButton:hover
+		{	
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/metro/icons/downloads/topofqueue_h )"
+			}
+		}
+		
+		topOfQueueButton:active
+		{	
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/metro/icons/downloads/topofqueue_p )"
+			}
+		}
+		
+		SmRemoveButton
+		{   
+			font-size=0
+			textcolor=none
+			bgcolor=none
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/icon_button_stop )"
+			}
+		}
+		
+		SmRemoveButton:hover
+		{  
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/icon_button_stop_over )"
+			}
+		}
+		
+		SmRemoveButton:active
+		{  
+			render
+			{
+				1="image( x0, y0, x1, y1, graphics/icon_button_stop_down )"
+			}
+		}
+
+		SlimProgressBar
+		{
+			alpha=63.75
+			textcolor=focus
+			render_bg {}
+			render {}    
+		}
+	}
+
+
+	layout
+	{
+		region	{ name="bottom" align=bottom }
+		region	{ name="right" align=right width=max }
+		
+		region { name="column1" x=0 width=200 }
+		region { name="column2" x=210 width=max } 
+		region { name="column3" x=500 width=max }
+		region { name="column4" x=700 width=max overflow=allow-horizontal }
+		
+		//Full Width/Height Progress Bar
+		place { control="downloadprogressbar" x=0 width=max height=0 }
+
+		//Game Image
+		place { control="gameimage" align=left-center x=16 width=185 height=85 }
+		
+		//Links
+		place { control="newslink,settingslink" x=16 y=80 align=right height=40 spacing=0 margin-right=16 }
+		
+		//Game Title
+		place { control="namelabel" region="column2" height=40 }
+
+		//Stats
+		place { control="downloadtotallabel,downloadtotalfield" region="column2" align=top margin-top=40 spacing=4 height=20 }
+		place { control="starttimelabel,starttimefield" region="column2" dir="right" align=top spacing=4 margin-top=60 height=20 }
+		place { control="timecompletedlabel,timecompletedfield" region="column2" align=top margin-top=60 spacing=4 height=20 }		
+		place { control="timeremaininglabel,timeremainingfield" region="column2" align=top margin-top=80 spacing=4 height=20 }
+			
+		//Status
+		place { control="updatetypelabel" dir=down align=right height=40 margin-right=16 }
+		
+		//Buttons
+		place { control="launchbutton,topofqueuebutton,removefromqueuebutton" y=40 height=40 width=40 dir=right spacing=8 align=right margin-right=16 }		
+		
+		//Hidden
+		place { control="dashlabel" width=0 height=0 }
+	
+	}
+}

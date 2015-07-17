@@ -1,0 +1,49 @@
+gameoverlay.styles
+{
+	include "resource/styles/steam.styles"
+	
+	colors 
+	{
+		//TextEntry="ClientBG"
+		mostly_black "0 0 0 240"
+		semi_black "0 0 0 128"
+		semi_gray "32 32 32 220"
+		Notifications.PanelPosition     "BottomRight"  // osx has toast in the upper right, but in-overlay should not.
+	}
+	
+	styles 
+	{		
+    TextEntry
+    {
+      //textcolor="White"
+      //selectedtextcolor="White"
+      //shadowtextcolor="White"  // this is the cursor color
+    }
+
+		Focus
+		{
+			font-size=20
+			textcolor=White45
+		}
+
+		Highlight
+		{
+			font-size=20
+			textcolor=White45
+		}
+
+    detailsbox
+    {
+			bgcolor=none
+    }
+
+    detailsboxtitle
+    {
+      font-family=light
+			font-weight=300
+      font-size="32"
+      textcolor="White"
+      font-style=Regular
+    }
+	}
+}

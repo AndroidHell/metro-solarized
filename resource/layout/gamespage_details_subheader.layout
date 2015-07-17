@@ -1,0 +1,175 @@
+"resource/layout/gamespage_details_subheader.layout"
+{
+	controls
+	{
+		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
+		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
+	}
+
+	colors
+	{
+		GameDetailsSubHeader.HorizontalSpacing=40
+		GameDetailsSubHeader.VerticalMargin=0
+	}
+
+	styles
+	{
+		StatusText
+		{
+			font-size=16
+			inset="0 4 0 0"
+		}
+
+		"DetailsInstallButton"
+		{
+			minimum-width=40
+			textcolor=none
+			font-size=0
+			bgcolor=none
+			render_bg
+			{
+				1="image( x0, y0, x1, y1, graphics/install )"
+			}
+		}
+		
+		"DetailsInstallButton:hover"
+		{
+			render_bg
+			{
+				1="image( x0, y0, x1, y1, graphics/install_h )"
+			}
+		}
+		
+		"DetailsInstallButton:active"
+		{
+			render_bg
+			{
+				1="image( x0, y0, x1, y1, graphics/install_p )"
+			}
+		}
+		
+		"DetailsInstallButton:disabled"
+		{
+			render_bg
+			{
+				1="image( x0, y0, x1, y1, graphics/install_d )"
+			}
+		}
+		
+		DetailsLaunchButton
+		{
+			minimum-width=40
+			textcolor=none
+			font-size=0
+			bgcolor=none
+			render_bg
+			{
+			1="image( x0, y0, x1, y1, graphics/play )"
+			}  
+		}
+		
+		DetailsLaunchButton:hover
+		{   
+      render_bg
+      {
+       	1="image( x0, y0, x1, y1, graphics/play_h )"
+      }
+		}
+		
+		DetailsLaunchButton:active
+		{   
+      render_bg
+      {
+       	1="image( x0, y0, x1, y1, graphics/play_p )"
+      }
+		}
+		
+		DetailsLaunchButton:disabled
+		{   
+      render_bg
+      {
+       	1="image( x0, y0, x1, y1, graphics/play_d )"
+      }
+		}
+		
+		DetailsBuyButton
+		{
+			minimum-width=40
+			textcolor=none
+			font-size=0
+			bgcolor=none
+			render_bg
+			{
+			1="image( x0, y0, x1, y1, graphics/metro/icons/buy )"
+			}  
+		}
+		
+		DetailsBuyButton:hover
+		{   
+      render_bg
+      {
+       	1="image( x0, y0, x1, y1, graphics/metro/icons/buy_h )"
+      }
+		}
+		
+		DetailsBuyButton:active
+		{   
+      render_bg
+      {
+       	1="image( x0, y0, x1, y1, graphics/metro/icons/buy_p )"
+      }
+		}
+		
+		DetailsBuyButton:disabled
+		{   
+      render_bg
+      {
+       	1="image( x0, y0, x1, y1, graphics/metro/icons/buy_d )"
+      }
+		}
+
+		CDetailsGameSubHeaderPanel
+		{
+			bgcolor=none
+		}
+	}
+
+	layout
+	{
+		// Y offset here should match the vertical padding value above in the colors section
+		region { name="header" y=0 x=0 width=max height=max }
+
+		place { 
+			control=launchbutton,installbutton,preloadbutton,purchasebutton,activateguestpassbutton
+			align=top-center
+			region=header
+			margin=8
+			margin-top=0
+			dir=down
+			align=left
+			spacing=8
+			height=40
+			width=40
+		}
+		
+		place { 
+			start=launchbutton
+			control=clientlist
+			region=header
+			dir=right
+			align=left
+			height=40
+			width=40
+		}
+		
+		place { 
+			control=subheaderlabels
+			start=launchbutton
+			align=top-center
+			margin=8
+			margin-bottom=0
+			dir=down
+			height=max
+		}
+	}
+}

@@ -1,0 +1,171 @@
+"scrollbars.styles"
+{
+	styles
+	{
+    Slider
+    {
+      font-family=basefont
+      font-size=10
+      font-weight=400
+      textcolor="ScrollBar"
+      font-style=uppercase
+    }
+      
+    Slider:focus
+    {
+      textcolor="ScrollBarH"  
+    }
+
+		ScrollBar
+		{
+			inset="0 0 0 0"
+			render_bg
+			{
+			//0="fill(x0-1,y0,x0,y1,focus)"
+			}
+		}	
+		
+		ScrollBar.Horizontal
+		{
+			inset="0 0 0 0"
+		}
+    
+    ScrollBarButton.up
+    {
+      bgcolor=none
+			image=graphics/icon_up_default
+			padding-bottom=2
+    }
+		
+		ScrollBarButton.up:hover
+		{
+			image=graphics/icon_up_hover
+		}
+    
+    ScrollBarButton.down
+    {
+      bgcolor=none
+			image=graphics/icon_down_default
+			padding-top=3
+    }
+		
+		ScrollBarButton.down:hover
+		{
+			image=graphics/icon_down_hover
+		}
+    
+    ScrollBarButton.left
+    {
+      bgcolor=none
+      render_bg
+      {
+			0="image(x0+7,y0+5,x1,y1,graphics/icon_left_default)"
+      }
+    }
+		
+    ScrollBarButton.left:hover
+    {
+      bgcolor=none
+			render_bg
+			{
+				1="image(x0+7,y0+5,x1,y1,graphics/icon_left_hover)"
+			}
+    }
+  
+    ScrollBarButton.right
+    {
+      bgcolor=none
+			render_bg
+			{
+				1="image(x0+7,y0+5,x1,y1,graphics/icon_right_left)"
+			}
+    }
+		
+    ScrollBarButton.right:hover
+    {
+      bgcolor=none
+			render_bg
+			{
+				1="image(x0+7,y0+5,x1,y1,graphics/icon_right_hover)"
+			}
+    }
+        
+    ScrollBarHandle  //vertical scrollbar thumb
+    {
+		bgcolor=none
+		render_bg 
+      {
+        // center fill
+        0="fill( x0+0, y0, x1-1, y1, White12 )"
+      }
+    }
+       
+    "ScrollBarHandle:hover"
+    {
+      render_bg 
+      {
+        // center fill
+        0="fill( x0, y0, x1-1, y1, White24 )"
+      }
+    }  
+
+    "ScrollBarHandle:selected"
+    {
+      render_bg 
+      {
+        // center fill
+        0="fill( x0, y0, x1-1, y1, White24 )"
+      }
+    }   
+
+    "SliderHoriz"  //horizontal scrollbar thumb
+    {
+      render_bg {
+      	// center fill
+        0="fill( x0, y0+2, x1, y1-3, White12 )"
+		}
+    }
+    
+    "SliderHoriz:hover"
+    {
+      render_bg 
+			{
+      	// center fill
+        0="fill( x0, y0+2, x1, y1-3, White24 )"
+			}
+    }
+		
+    "SliderHoriz:selected"
+    {
+      render_bg 
+			{
+      	// center fill
+        0="fill( x0, y0+2, x1, y1-3, White24 )"
+			}
+    }
+    
+    ScrollBarSlider // gutter
+    {
+		bgcolor="none"
+		render_bg
+		{}
+    }
+    
+    ScrollBarSliderHoriz // gutter
+    {
+		bgcolor="none"
+		render_bg { }
+    }
+    
+    ScrollBarSlider:disabled 
+    {
+		bgcolor="none"
+		render_bg {}
+    }
+    
+    "ScrollBar SliderHoriz" // gutter
+    {
+		bgcolor="none"
+    }
+	}
+}

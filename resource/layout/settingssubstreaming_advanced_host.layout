@@ -1,0 +1,50 @@
+"resource/layout/settingssubstreaming_advanced_host.layout"
+{
+	controls
+	{
+		"DescriptionLabel"
+		{
+			ControlName="Label"
+			fieldName="DescriptionLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_AdvancedHostOptions_Description"
+		}
+
+		"EnableHardwareEncoding" { ControlName="CheckButton" fieldName="EnableHardwareEncoding" labelText="#Steam_Settings_Streaming_EnableHardwareEncoding" }
+		
+		"EnableTrafficPriorityLabel"
+		{
+			ControlName="Label"
+			fieldName="EnableTrafficPriorityLabel"
+			wrap=1
+			labelText="#Steam_Settings_Streaming_EnableTrafficPriority_Description"
+		}
+		"EnableTrafficPriority" { ControlName="CheckButton" fieldName="EnableTrafficPriority" labelText="#Steam_Settings_Streaming_EnableTrafficPriority" }
+
+		"SupportInformationLabel"
+		{
+			ControlName="URLLabel"
+			fieldName="SupportInformationLabel"
+			labelText="#Steam_Settings_Streaming_StreamingSupport"
+			URLText="https://support.steampowered.com/kb_article.php?ref=3629-RIAV-1617"
+		}
+		
+		OKButton { ControlName="Button" fieldName="OKButton" command="Close" labelText="#PropertyDialog_OK" }
+	}
+	
+	style
+	{
+	}
+	
+	layout
+	{
+		place { control="frame_minimize,frame_maximize,frame_close" align=right width=34 height=27 }
+
+	
+		place { control="DescriptionLabel,EnableHardwareEncoding,EnableTrafficPriorityLabel,EnableTrafficPriority" y=40 dir=down width=max margin-left=16 margin-right=16 spacing=8 }
+
+		region { name=bottom align=bottom height=44 margin=8 }
+		place { control="SupportInformationLabel" x=8 y=4 region=bottom }
+		place { control="OKButton" region=bottom align=right spacing=8 width=84 height=28 }
+	}
+}

@@ -1,0 +1,20 @@
+"reset.styles"
+{
+	colors
+	{
+    almostBlack="23 22 20 255"
+
+    // control colors
+    bordercolor="119 119 119 255"
+    darkcorner="77 73 71 255"
+    buttontext=White
+    buttontextactive=White
+    
+    ButtonBorder="White10"
+    ButtonBorderPage="White10"
+    ButtonBorderDisabled="White10"
+    ButtonBorderDisabled2="White10"
+    ButtonBorderActive="Focus"
+    ButtonBorderFocus="Focus"
+	}
+}

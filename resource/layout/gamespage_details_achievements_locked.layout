@@ -1,0 +1,72 @@
+"resource/layout/gamespage_details_achievements_locked.layout"
+{
+	controls
+	{
+		locked_area { controlname="CAchievementsLockedPanel" style="lockedarea" }
+
+		imageexplanation { controlname="Label" style="infolabel" labeltext="#Steam_AchievementsLocked" }
+		achievementlabelmore { controlname="Label" style="achievementlabelmore" labeltext="#Steam_MoreAchievements" textAlignment="center" tooltiptext="#Steam_ViewAllAchievements"}
+	}
+
+	colors
+	{
+		// Note, the below values are used for dynamic layout in code, and must match the values from place
+		// commands below for layout to work correctly.
+
+		// ImageAreaSpacing must be the spacing between achievement images
+		GameDetailsAchievements.ImageAreaSpacing "16"
+
+		// ImageWidth must be the width of an achievement image in the display
+		GameDetailsAchievements.ImageWidth "40"
+
+		// Size of the border around locked achievement images
+		GameDetailsAchievements.LockedImageBorder "6"
+ 
+		Tooltip.Anchor=Parent
+	}
+
+	styles
+	{
+		lockedarea
+		{
+			minimum-height="40"
+		}
+
+		infolabel
+		{
+			image=graphics/achievement_locked
+			padding-left=12
+		}
+
+    achievementlabelmore
+    {
+			font-family=basefont
+			font-weight=300
+			font-size=16
+			textcolor="White75"
+			padding-bottom=1
+    }
+  
+		achievementlabelmore:hover
+    {   
+			textcolor=white
+    }
+
+		achievementimagebg
+		{
+			bgcolor=none
+			inset="0 0 0 0"
+      image=graphics/avatarBorderOffline
+		}
+	
+	}
+
+	layout
+	{
+		place { control=imageexplanation width=64 height=40 }
+		place { control=*achievementimage,*achievementlabelmore start=imageexplanation dir=right width=40 height=40 x=8 spacing=2 }
+
+		//Hidden
+		place { control=achievementname height=0 width=0 }		
+	}
+}
